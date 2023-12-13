@@ -13,8 +13,9 @@ import {
   isRouteErrorResponse,
 } from '@remix-run/react';
 import favicon from '../public/favicon.svg';
-import resetStyles from './styles/reset.css';
-import appStyles from './styles/app.css';
+// import resetStyles from './styles/reset.css';
+// import appStyles from './styles/app.css';
+import twStyles from './styles/tailwind.css';
 import {Layout} from '~/components/Layout';
 
 /**
@@ -37,8 +38,9 @@ export const shouldRevalidate = ({formMethod, currentUrl, nextUrl}) => {
 
 export function links() {
   return [
-    {rel: 'stylesheet', href: resetStyles},
-    {rel: 'stylesheet', href: appStyles},
+    // {rel: 'stylesheet', href: resetStyles},
+    // {rel: 'stylesheet', href: appStyles},
+    {rel: 'stylesheet', href: twStyles},
     {
       rel: 'preconnect',
       href: 'https://cdn.shopify.com',
